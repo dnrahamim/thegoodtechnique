@@ -1,0 +1,55 @@
+1. no more `Payment.destroy_all(key: value)`
+instead use `Payment.where(key: value).destroy_all
+
+2. no more ActiveRecord::Base.sanitize
+instead use public api https://api.rubyonrails.org/classes/ActiveRecord/Sanitization/ClassMethods.html
+
+3. can’t do `errors[:url] = "needs to be a valid URL”`
+instead do `errors[:url] << "needs to be a valid URL”`
+
+4. no more getting Grape::Entity keys using `entity.exposures`
+instead I did entity.root_exposures.to_a.map {|d| d.attribute}
+
+5. sometimes doctor.practices returns a relation instead of an associaton. what's up with that?
+
+6. 
+
+a relationship
+is about hammering out
+so that you fit together seamlessly
+building trust. understanding. loyalty. teamwork
+
+when you start
+you are more afraid, confused, detached, out of sync
+as your relationship goes
+you will move in. closer and closer
+but as that happens
+you will run into these square peg round hole places
+knots
+that you need to smooth out
+conflicts
+
+
+
+the rules
+when someone hurts you
+you don't hurt them back
+because that doesn't really help you
+you do what you can to wake them up
+enought to convince them to right what was wrong
+
+
+just think how importatn this is for me as someone who identifies as a prosocial psychopath
+i have this strong 50% pragmatism in me. I'm fully willing to use people for what they're worth to me
+at least, to see them as means not ends
+and my other 50% extreme compassion is not okay with that
+but also, we have to live. we have to survive. to move ahead. to take care of ourselves and others
+seeing them as objects is a fact of life. it's what we do to help them and ourselves
+so we need to do it with precision
+how? the rules
+leave out the malice. the resentment
+recognize the element of fear. hysteria
+boil it down to pure logic. to pure positive feeling
+recognize what balance feels like. recognize when trust feels right
+then. treat people how you will
+yes. it means a lot to us
